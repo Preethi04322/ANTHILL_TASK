@@ -1,0 +1,146 @@
+/* Background and centering */
+.login-bg {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(4px);
+}
+.login-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(6px); /* subtle blur */
+  background-color: rgba(255, 255, 255, 0.2); /* gentle white overlay */
+  z-index: 0;
+}
+
+.login-wrapper {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 900px;
+}
+
+.login-card {
+  display: flex;
+  width: 100%;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Left side - Car image */
+.login-left {
+  width: 50%;
+}
+
+.login-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Right side - Login form */
+.login-right {
+  width: 50%;
+  padding: 2.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: red;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.brand-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.tabs button {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.active-tab {
+  background: red;
+  color: white;
+  border-radius: 5px 0 0 5px;
+}
+
+.inactive-tab {
+  background: #eee;
+  color: #333;
+  border-radius: 0 5px 5px 0;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.input-wrapper {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.prefix {
+  background: #f2f2f2;
+  padding: 0.8rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.input-wrapper input {
+  border: none;
+  padding: 0.8rem;
+  flex: 1;
+  font-size: 1rem;
+}
+
+.continue-btn {
+  background: red;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}

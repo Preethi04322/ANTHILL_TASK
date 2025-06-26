@@ -1,0 +1,147 @@
+.roadmap-faq {
+  background-color: #f8f9fa;
+  padding: 4rem 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.faq-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.faq-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  display: flex;
+  align-items: flex-start;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.red-line {
+  color: #e74c3c;
+  margin-right: 12px;
+  font-weight: 900;
+  font-size: 2.8rem;
+  line-height: 1;
+  margin-top: -5px;
+}
+
+.faq-description {
+  color: #6c757d;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faq-item {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s ease;
+}
+
+.faq-item:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+  width: 100%;
+  padding: 1.5rem;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: #f8f9fa;
+}
+
+.question-text {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2c3e50;
+  line-height: 1.4;
+}
+
+.toggle-icon {
+  color: #6c757d;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #f8f9fa;
+  transition: all 0.3s ease;
+}
+
+.faq-question[aria-expanded="true"] .toggle-icon {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.faq-answer {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  animation: slideDown 0.3s ease-out;
+}
+
+.faq-answer p {
+  color: #6c757d;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .roadmap-faq {
+    padding: 2rem 1rem;
+  }
+
+  .faq-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .faq-header h2 {
+    font-size: 2rem;
+  }
+
+  .faq-question {
+    padding: 1.25rem;
+  }
+
+  .question-text {
+    font-size: 0.95rem;
+  }
+}

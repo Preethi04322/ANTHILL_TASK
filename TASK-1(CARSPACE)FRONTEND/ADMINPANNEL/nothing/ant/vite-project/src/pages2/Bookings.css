@@ -1,0 +1,224 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #e9f0fb;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  /* background: #e9f0fb; */
+  padding: 0px 20px
+}
+
+/* Topbar Styling */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background-color: transparent;
+}
+
+.topbar-left .topbar-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.topbar-left .topbar-subtitle {
+  margin: 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Bell inside a box */
+.bell-box {
+  background-color: white;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1.5px solid #d0d5dd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Profile image + name + dropdown in one box */
+.profile-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 8px 16px;
+  border-radius: 12px;
+  border: 1.5px solid #d0d5dd;
+  gap: 12px;
+  cursor: pointer;
+  width: 240px;
+}
+
+/* Rectangle profile image */
+.rect-avatar {
+  width: 40px;
+  height: 32px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.topbar-username {
+  font-weight: 500;
+  color: #333;
+  flex: 1;
+}
+
+.dropdown-icon {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 8px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 8px 0;
+  width: 180px;
+  z-index: 1000;
+  display: none;
+}
+
+.profile-box:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu p {
+  padding: 10px 20px;
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+.dropdown-menu p:hover {
+  background-color: #f0f0f0;
+}
+
+/* Main content area */
+.main {
+  flex-grow: 1;
+  padding: 20px 30px;
+  overflow-y: auto;
+}
+
+/* Controls: Search + Filter */
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+/* Left section - Search bar */
+.left-controls input[type="text"] {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  min-width: 200px;
+}
+
+/* Right section - Calendar and Dropdown */
+.right-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.calender {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.calender svg {
+  font-size: 18px;
+  color: #333;
+}
+
+.right-controls select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
+/* Table styling */
+table {
+  width: 100%;
+  background: white;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+table thead {
+  background: #f4f4f4;
+}
+
+table th,
+table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  color: #222;
+  font-size: 14px;
+}
+
+/* Booking status tags */
+.status {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.status.pending {
+  color: orange;
+}
+
+.status.confirmed {
+  color: green;
+}
+
+.status.cancelled {
+  color: red;
+}
+
+/* View button */
+.view-btn {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+}

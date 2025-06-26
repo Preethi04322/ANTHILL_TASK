@@ -1,0 +1,56 @@
+/* src/Components/RecentBookings.css */
+
+.recent-bookings-container {
+  background-color: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 380px;
+}
+
+.recent-bookings-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.recent-bookings-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.recent-booking-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.with-border {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.booking-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.booking-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.booking-name {
+  color: #333;
+  font-weight: 500;
+}
+
+.booking-time {
+  font-size: 14px;
+  color: #888;
+}

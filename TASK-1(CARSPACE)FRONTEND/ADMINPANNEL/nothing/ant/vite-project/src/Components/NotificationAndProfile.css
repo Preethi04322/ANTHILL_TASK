@@ -1,0 +1,70 @@
+.topbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.bell-box {
+  background-color: #007bff;
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+}
+
+.topbar-icon {
+  font-size: 18px;
+}
+
+.profile-box {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+}
+
+.rect-avatar {
+  border-radius: 6px;
+  width: 40px;
+  height: 32px;
+  object-fit: cover;
+}
+
+.topbar-username {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.dropdown-icon {
+  font-size: 12px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 20px;
+  top: 60px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 10;
+}
+
+.dropdown-menu p {
+  margin: 0;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.dropdown-menu p:hover {
+  background-color: #f1f1f1;
+}

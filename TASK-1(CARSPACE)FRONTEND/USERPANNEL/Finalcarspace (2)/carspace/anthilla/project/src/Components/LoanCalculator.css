@@ -1,0 +1,38 @@
+.loan-calculator {
+  border: 1px solid #eee;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin: 2rem auto;
+  max-width: 1500px;
+  background: #fefefe;
+}
+
+.loan-calculator h3 {
+  margin-bottom: 1rem;
+}
+
+.loan-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.loan-grid input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.loan-buttons {
+  margin-top: 1rem;
+}
+
+.loan-buttons .btn {
+  margin-right: 10px;
+}
+
+.result {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: green;
+}

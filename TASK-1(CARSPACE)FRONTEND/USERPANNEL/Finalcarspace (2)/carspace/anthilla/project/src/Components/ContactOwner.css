@@ -1,0 +1,75 @@
+.contact-owner-container {
+  position: absolute;
+  top: 75rem;
+  right: 2rem;
+  max-width: 350px;
+}
+
+.btn-primary {
+  background-color: #d60000;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #d60000;
+  border: 1px solid #d60000;
+  width: 100%;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.owner-box {
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.04);
+}
+
+.owner-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.owner-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: repeating-conic-gradient(#ccc 0% 25%, transparent 0% 50%);
+  background-size: 8px 8px;
+}
+
+.subtext {
+  font-size: 12px;
+  color: #888;
+  margin: 0;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+form textarea {
+  resize: none;
+}

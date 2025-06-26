@@ -1,0 +1,155 @@
+
+.class {
+  background: url('https://cdn.pixabay.com/photo/2016/12/11/02/21/bus-1898612_640.jpg') no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+
+.dashboard-container {
+  position: relative;
+  padding: 30px 20px;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, rgba(0,0,0,0.5), rgba(255,255,255,0.2)),
+              url('https://cdn.pixabay.com/photo/2021/10/16/10/42/bus-6714717_640.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 25px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.search-form input,
+.search-form button {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+.search-form input {
+  flex: 1 1 200px;
+}
+
+.search-form input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0,123,255,0.2);
+}
+
+.search-form button {
+  background: #007bff;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.search-form button:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+.search-form button:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+
+.card {
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInCard 0.5s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInCard {
+  to { opacity: 1; }
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card button {
+  margin-top: 15px;
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.card button:hover {
+  background: #218838;
+}
+
+
+.my-bookings-btn {
+  margin: 30px 10px 10px 0;
+  padding: 12px 24px;
+  background: #17a2b8;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.my-bookings-btn:hover {
+  background: #138496;
+  transform: scale(1.05);
+}
+
+
+.my-bookings-btn-logout {
+  margin: 30px 0 10px 0;
+  padding: 12px 24px;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.my-bookings-btn-logout:hover {
+  background: #c82333;
+  transform: scale(1.05);
+}

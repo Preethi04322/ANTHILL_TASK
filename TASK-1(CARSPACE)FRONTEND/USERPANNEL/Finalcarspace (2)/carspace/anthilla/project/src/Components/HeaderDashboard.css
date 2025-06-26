@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+
+.header {
+  background: url('../assets/header_cars.jpg') center center/cover no-repeat;
+  height: 320px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  color: white;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Slight transparency */
+  z-index: 0;
+}
+
+.overlay {
+  width: 100%;
+  max-width: 1200px;
+  padding: 10px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+
+/* Logo Styling */
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+}
+.logo span {
+  color: red;
+}
+
+/* Navigation Styling */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+nav li:hover {
+  color: #ffcccc;
+}
+
+.user-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.user-box:hover {
+  box-shadow: 0 4px 10px rgba(224, 204, 204, 0);
+  background-color: rgba(0,0,0,0.2);
+}
+
+/* Actions on Right */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.compare-btn {
+  background: red;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+.compare-btn:hover {
+  background: #cc0000;
+}
+
+.user-box {
+  background-color: white;
+  padding: 4px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .overlay {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,67 @@
+.navbar {
+  background-size: cover;
+  background-position: center;
+  padding: 1.5rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.logo {
+  font-size: 2rem; /* Adjusted font size */
+  font-weight: bold; /* Changed to bold */
+}
+
+.logo span {
+  color: red; /* Add accent color */
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 3rem; /* Space between logo and nav links */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem; /* Space between each nav link */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  cursor: pointer;
+  font-weight: 500; /* Regular weight */
+  transition: color 0.3s ease; /* Smooth transition */
+  
+  /* Add hover effect */
+  padding: 0.5rem;
+}
+
+.nav-links li:hover {
+  color: #ddd; /* Change color on hover */
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; /* Space between button and profile icon */
+}
+
+.compare-btn {
+  background-color: red; /* Button color */
+  color: white; /* Text color */
+  padding: 0.6rem 1.6rem; /* Padding for the button */
+  border: none;
+  border-radius: 5px;
+  font-weight: bold; /* Bold text */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.compare-btn:hover {
+  background-color: darkred; /* Change color on hover */
+}
+

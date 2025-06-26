@@ -1,0 +1,83 @@
+.faq-container { 
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+}
+
+.faq-form {
+  width: 95%;
+  padding:  20px;
+  max-width: 1500px;
+  position: relative;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+.faq-form h2 {
+  margin: 0 0 20px;
+  margin-left: 20px;
+  color: #000;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.red-dot {
+  height: 12px;
+  width: 12px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.faq-form input,
+.faq-form textarea {
+  width: 90%;
+  padding: 16px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+  background-color: #f9f9f9;
+}
+
+.faq-form textarea {
+  resize: vertical;
+  min-height: 200px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.save {
+  background-color: #0066ff;
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 50px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.clear {
+  background-color: #b3b3b3;
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 50px;
+}

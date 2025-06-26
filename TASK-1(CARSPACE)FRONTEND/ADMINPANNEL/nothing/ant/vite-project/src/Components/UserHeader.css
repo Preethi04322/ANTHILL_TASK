@@ -1,0 +1,97 @@
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eaf3fd;
+  padding: 16px 24px;
+  border-bottom: 1px solid #ddd;
+}
+
+.topbar-left .topbar-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.topbar-left .topbar-subtitle {
+  margin: 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Bell inside a box */
+.bell-box {
+  background-color: white;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1.5px solid #d0d5dd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Profile image + name + dropdown in one box */
+.profile-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 8px 16px;
+  border-radius: 12px;
+  border: 1.5px solid #d0d5dd;
+  gap: 12px;
+  cursor: pointer;
+  width: 240px; /* You can increase this as needed */
+}
+
+/* Rectangle Image */
+.rect-avatar {
+  width: 40px;
+  height: 32px;
+  border-radius: 6px; /* Slight rounding, remove for sharp edges */
+  object-fit: cover;
+}
+
+.topbar-username {
+  font-weight: 500;
+  color: #333;
+  flex: 1; /* Pushes dropdown icon to the right */
+}
+
+.dropdown-icon {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 8px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 8px 0;
+  width: 180px;
+  z-index: 1000;
+}
+
+.dropdown-menu p {
+  padding: 10px 20px;
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+.dropdown-menu p:hover {
+  background-color: #f0f0f0;
+}

@@ -1,0 +1,118 @@
+/* components/styles.css */
+body, html {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  width: 220px;
+  background: white;
+  padding: 20px;
+  height: 100vh;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+  color: #e60000;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-item {
+  padding: 10px 15px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.menu-item:hover {
+  background: #f0f0f0;
+}
+
+.menu-item.active {
+  background: #e6f0ff;
+  color: #0066cc;
+  font-weight: 600;
+}
+
+.main-content {
+  flex: 1;
+  background: #f0f6ff;
+  padding: 30px;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.subtitle {
+  color: #888;
+  margin-top: 4px;
+  font-size: 14px;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.profile-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.table-container {
+  margin-top: 20px;
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  text-align: left;
+  padding: 10px;
+  background: #f8f8f8;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+tbody td {
+  padding: 10px;
+  font-size: 14px;
+  border-top: 1px solid #eee;
+}
+
+tbody tr:hover {
+  background: #fafafa;
+}
+
+a {
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+}

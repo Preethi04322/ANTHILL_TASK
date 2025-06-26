@@ -1,0 +1,175 @@
+.page-container {
+  display: flex;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.sidebar {
+  width: 180px;
+  background: white;
+  border-right: 1px solid #ddd;
+  height: 100vh;
+  padding: 20px;
+}
+
+.logo {
+  color: #d32027;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-list li {
+  padding: 10px 5px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav-list li.active,
+.nav-list li:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.content {
+  flex: 1;
+  background: #eaf4ff;
+  padding: 20px 40px;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-icon {
+  font-size: 1px;
+  margin-right: 3px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.car-form {
+  background: white;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.form-grid input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.description-row {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.description-row textarea {
+  flex: 2;
+  padding: 10px;
+  height: 100px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.mpg-fields {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.address-row {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.address-row input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.media-upload {
+  margin-top: 20px;
+}
+
+.upload-box {
+  background: #f0f0f0;
+  height: 150px;
+  border: 1px dashed #999;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.upload-icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.features label {
+  font-size: 14px;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.submit-btn {
+  background: #d32027;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.clear-btn {
+  border: 1px solid #999;
+  background: white;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+

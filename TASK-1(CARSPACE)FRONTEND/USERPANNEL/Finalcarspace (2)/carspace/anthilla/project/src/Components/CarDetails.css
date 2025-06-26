@@ -1,0 +1,119 @@
+.car-details-container {
+  padding: 2rem;
+  max-width: 1100px;
+  margin: auto;
+  font-family: sans-serif;
+}
+.highlight {
+  color: red;
+  margin-right: 5px;
+}
+.car-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.price-section .discounted {
+  color: #c70000;
+  font-weight: bold;
+  font-size: 20px;
+}
+.price-section .original {
+  text-decoration: line-through;
+  margin-left: 10px;
+  color: #888;
+}
+.car-images {
+  margin-top: 1rem;
+}
+.main-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.thumbnail-row {
+  display: flex;
+  margin-top: 1rem;
+  gap: 10px;
+}
+.thumb {
+  width: 100px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.7;
+  border: 2px solid transparent;
+}
+.thumb.active {
+  opacity: 1;
+  border: 2px solid red;
+}
+.car-section {
+  margin-top: 2rem;
+}
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 20px;
+  margin-top: 10px;
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+  padding-left: 0;
+  gap: 10px;
+}
+.actions-form {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+.actions .btn {
+  margin-bottom: 10px;
+}
+.test-drive-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input, textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.btn.primary {
+  background-color: #c70000;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+}
+.btn.outline {
+  background: none;
+  border: 2px solid #c70000;
+  color: #c70000;
+  padding: 10px;
+  border-radius: 6px;
+}
+.featured-btn {
+  background-color: #ffcc00;
+  color: #000;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.featured-btn:hover {
+  background-color: #ffc107;
+  transform: scale(1.05);
+}

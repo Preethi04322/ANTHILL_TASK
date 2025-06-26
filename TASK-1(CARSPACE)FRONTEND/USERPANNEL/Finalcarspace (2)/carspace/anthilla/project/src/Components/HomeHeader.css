@@ -1,0 +1,80 @@
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 1.5rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+  color: white;
+  background: transparent;
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.logo span {
+  color: white;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin-left: 3rem;
+}
+
+.nav-menu li {
+  cursor: pointer;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-menu li:hover {
+  color: #ddd;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-right-a {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.compare-btn-b {
+  background-color:#DC3545;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+  
+}
+.compare-btn-b:hover {
+  background-color: darkred;
+}
+
+.profile-icon-c {
+  width: 50px;
+  height: 50px;
+  
+  object-fit: cover;
+  border-radius: 5%;
+  
+  margin-right: 9rem
+}

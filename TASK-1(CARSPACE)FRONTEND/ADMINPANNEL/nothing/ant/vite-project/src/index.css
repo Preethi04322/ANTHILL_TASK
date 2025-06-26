@@ -1,0 +1,94 @@
+/* index.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f6ff;
+}
+
+.sidebar {
+  background-color: #ffffff;
+  width: 250px;
+  padding: 20px;
+  height: 100vh;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h1 {
+  color: #ff1e1e;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px 0;
+  color: #555;
+  cursor: pointer;
+}
+
+.sidebar li:hover {
+  color: #ff1e1e;
+}
+
+.main {
+  flex: 1;
+  padding: 30px;
+  background-color: #f0f6ff;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+}
+
+.card h4 {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.card p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.card .subtext {
+  color: #2196f3;
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.topbar img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}

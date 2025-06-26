@@ -1,0 +1,83 @@
+/* src/components/UserTable.css */
+
+.user-table-container {
+  padding: 24px;
+  background-color: white;
+  /* min-height: 100vh; */
+}
+
+.user-table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.user-table-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+.user-table-subtitle {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #777;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.user-table-wrapper {
+  overflow-x: auto;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.user-table th,
+.user-table td {
+  text-align: left;
+  padding: 12px 10px;
+  border-bottom: 1px solid #e6e6e6;
+  font-size: 14px;
+  color: #333;
+}
+
+.user-table th {
+  background-color:white;
+  font-weight: 600;
+}
+
+.user-table a {
+  color: #007bff;
+  text-decoration: none;
+  
+}
+
+.user-table a:hover {
+  text-decoration: underline;
+}

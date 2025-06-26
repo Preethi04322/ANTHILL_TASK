@@ -1,0 +1,114 @@
+.login-container {
+  min-height: 100vh;
+  position: relative;
+  background: url('https://media.istockphoto.com/id/1652672359/photo/in-the-bus-running-in-the-city-of-kollam-india.jpg?s=612x612&w=0&k=20&c=rPJ-Gu0ps1JUBvf5IZQovcJKeW-Vk7wiU99I8BIJ5rM=') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeInBg 2s ease-in-out;
+}
+
+@keyframes fadeInBg {
+  0% { opacity: 0; transform: scale(1.05); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  animation: fadeInOverlay 1s ease-in-out;
+}
+
+@keyframes fadeInOverlay {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.login-box {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 35px 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 400px;
+  animation: slideUp 0.8s ease-out;
+  transition: transform 0.3s ease;
+}
+
+
+@keyframes slideup{
+  0% {transform:translateY(20px); opacity: 0;}
+  100% {transform:translateY(0); opacity: 1;}
+}
+
+.login-box h1 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 600;
+}
+
+.login-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-box input,
+.login-box select {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.login-box input:focus,
+.login-box select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.login-box button {
+  padding: 12px;
+  background-color: #000;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-box button:hover {
+  background-color: #222;
+  transform: scale(1.02);
+}
+
+.login-box button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  margin-top: 12px;
+  text-align: center;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.toggle-button:hover {
+  color: #0056b3;
+}
